@@ -1,0 +1,24 @@
+{
+    "basketballOauth2Jhipster3App": {
+        "deporte" : {
+            "home": {
+                "title": "Deportes",
+                "createLabel": "Create a new Deporte",
+                "createOrEditLabel": "Create or edit a Deporte",
+                "search": "Search for Deporte"
+            },
+            "created": "A new Deporte is created with identifier {{ param }}",
+            "updated": "A Deporte is updated with identifier {{ param }}",
+            "deleted": "A Deporte is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Deporte {{ id }}?"
+            },
+            "detail": {
+                "title": "Deporte"
+            },
+            "nombre": "Nombre",
+            "evento": "Evento",
+            "deporteFavorito": "DeporteFavorito"
+        }
+    }
+}

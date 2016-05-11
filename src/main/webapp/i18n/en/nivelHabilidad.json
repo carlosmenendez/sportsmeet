@@ -1,0 +1,11 @@
+{
+    "basketballOauth2Jhipster3App": {
+        "NivelHabilidad" : {
+            "null": "",
+            "Basico": "Basico",
+            "Intermedio": "Intermedio",
+            "Avanzado": "Avanzado",
+            "Pro": "Pro"
+        }
+    }
+}

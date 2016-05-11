@@ -1,0 +1,78 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myEventoLabel" translate="basketballOauth2Jhipster3App.evento.home.createOrEditLabel">Create or edit a Evento</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.evento.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.localidad" for="field_localidad">Localidad</label>
+            <input type="text" class="form-control" name="localidad" id="field_localidad"
+                    ng-model="vm.evento.localidad"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.hora" for="field_hora">Hora</label>
+                <div class="input-group">
+                    <input id="field_hora" type="text" class="form-control" name="hora" datetime-picker="{{dateformat}}" ng-model="vm.evento.hora" is-open="vm.datePickerOpenStatus.hora"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('hora')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.inicioLatitud" for="field_inicioLatitud">InicioLatitud</label>
+            <input type="number" class="form-control" name="inicioLatitud" id="field_inicioLatitud"
+                    ng-model="vm.evento.inicioLatitud"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.inicioLongitud" for="field_inicioLongitud">InicioLongitud</label>
+            <input type="number" class="form-control" name="inicioLongitud" id="field_inicioLongitud"
+                    ng-model="vm.evento.inicioLongitud"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.final_trayectoLatitud" for="field_final_trayectoLatitud">Final_trayectoLatitud</label>
+            <input type="number" class="form-control" name="final_trayectoLatitud" id="field_final_trayectoLatitud"
+                    ng-model="vm.evento.final_trayectoLatitud"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="basketballOauth2Jhipster3App.evento.final_trayectoLongitud" for="field_final_trayectoLongitud">Final_trayectoLongitud</label>
+            <input type="number" class="form-control" name="final_trayectoLongitud" id="field_final_trayectoLongitud"
+                    ng-model="vm.evento.final_trayectoLongitud"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="basketballOauth2Jhipster3App.evento.deporte" for="field_deporte">deporte</label>
+            <select class="form-control" id="field_deporte" name="deporte" ng-model="vm.evento.deporte" ng-options="deporte as deporte.nombre for deporte in vm.deportes track by deporte.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="basketballOauth2Jhipster3App.evento.user" for="field_user">user</label>
+            <select class="form-control" id="field_user" name="user" ng-model="vm.evento.user" ng-options="user as user.login for user in vm.users track by user.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

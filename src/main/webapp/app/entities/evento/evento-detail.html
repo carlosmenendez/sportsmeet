@@ -1,0 +1,53 @@
+
+<div>
+    <h2><span translate="basketballOauth2Jhipster3App.evento.detail.title">Evento</span> {{vm.evento.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="basketballOauth2Jhipster3App.evento.localidad">Localidad</dt></dt>
+        <dd>
+            <span>{{vm.evento.localidad}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.hora">Hora</dt></dt>
+        <dd>
+            <span>{{vm.evento.hora | date:'medium'}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.inicioLatitud">InicioLatitud</dt></dt>
+        <dd>
+            <span>{{vm.evento.inicioLatitud}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.inicioLongitud">InicioLongitud</dt></dt>
+        <dd>
+            <span>{{vm.evento.inicioLongitud}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.final_trayectoLatitud">Final_trayectoLatitud</dt></dt>
+        <dd>
+            <span>{{vm.evento.final_trayectoLatitud}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.final_trayectoLongitud">Final_trayectoLongitud</dt></dt>
+        <dd>
+            <span>{{vm.evento.final_trayectoLongitud}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.deporte">deporte</span></dt>
+        <dd>
+            <a ui-sref="deporte-detail({id:vm.evento.deporte.id})">{{vm.evento.deporte.nombre}}</a>
+        </dd>
+        <hr>
+        <dt><span translate="basketballOauth2Jhipster3App.evento.user">user</span></dt>
+        <dd>
+            {{vm.evento.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

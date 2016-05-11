@@ -1,0 +1,55 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "deporte",
+            "otherEntityName": "deporte",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nombre"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "localidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "hora",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "inicioLatitud",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "inicioLongitud",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "final_trayectoLatitud",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "final_trayectoLongitud",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20160414180550",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "evento",
+    "pagination": "no"
+}

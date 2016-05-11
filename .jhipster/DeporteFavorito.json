@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "deporte",
+            "otherEntityName": "deporte",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nombre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nivelDominio",
+            "fieldType": "NivelHabilidad",
+            "fieldValues": "Basico,Intermedio,Avanzado,Pro"
+        }
+    ],
+    "changelogDate": "20160414180550",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "deporte_favorito",
+    "pagination": "no"
+}

@@ -1,0 +1,24 @@
+{
+    "basketballOauth2Jhipster3App": {
+        "deportefavorito" : {
+            "home": {
+                "title": "Deportefavoritos",
+                "createLabel": "Create a new Deportefavorito",
+                "createOrEditLabel": "Create or edit a Deportefavorito",
+                "search": "Search for Deportefavorito"
+            },
+            "created": "A new Deportefavorito is created with identifier {{ param }}",
+            "updated": "A Deportefavorito is updated with identifier {{ param }}",
+            "deleted": "A Deportefavorito is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Deportefavorito {{ id }}?"
+            },
+            "detail": {
+                "title": "Deportefavorito"
+            },
+            "nivelDominio": "NivelDominio",
+            "user": "User",
+            "deporte": "Deporte"
+        }
+    }
+}

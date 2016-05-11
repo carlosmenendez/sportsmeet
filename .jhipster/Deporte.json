@@ -1,0 +1,30 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "evento",
+            "otherEntityName": "evento",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "deporte"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "deporteFavorito",
+            "otherEntityName": "deporteFavorito",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "deporte"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160414180550",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "deporte",
+    "pagination": "no"
+}
